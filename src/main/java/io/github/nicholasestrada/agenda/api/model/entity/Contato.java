@@ -23,4 +23,12 @@ public class Contato {
 
     @Column
     private boolean favorito;
+
+    @Column
+    @Lob
+    private byte[] foto;
+
+    public boolean getFavorito() {
+        return this.favorito;
+    }
 }
